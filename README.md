@@ -36,7 +36,7 @@ La programación lógica está basada en la noción de que el programa implement
 La recursividad como estrategia lógica para encontrar soluciones, junto con la utilización de listas para representar conjuntos de valores, son dos características típicas de los programas lógicos. 
 
 
-**3- Hechos **
+**3- Hechos**
 
 Un hecho, en PROLOG,es una relacion entre objetos.
 Ejemplo:La capital de Francia es Paris. En Prolog se escribe capital(francia,paris).En general,la sintaxis es relacion(objeto,objeto,...).La relacion se conoce como el predicado y los objetos como los argumentos .
