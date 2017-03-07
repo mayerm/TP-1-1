@@ -34,3 +34,31 @@ La programación declarativa es un estilo de programación en el que el programa
 El paradigma tiene sus fundamentos en las teorías de la lógica proposicional. De ellas, se toman en particular las Cláusulas de Horn, que son una forma de lógica de predicados con una sola conclusión en cada cláusula y un conjunto de premisas de cuyo valor de verdad se deduce el valor de verdad de la conclusión: una conclusión es cierta si lo son simultáneamente todas sus premisas.
 La programación lógica está basada en la noción de que el programa implementa una relación, en vez de una transformación. Los predicados son relaciones, que al no tener predefinido una “dirección” entre sus componentes, permiten que sus argumentos actúen indistintamente como argumentos de entrada y salida.
 La recursividad como estrategia lógica para encontrar soluciones, junto con la utilización de listas para representar conjuntos de valores, son dos características típicas de los programas lógicos. 
+
+
+**3-** Hechos 
+
+Un hecho, en PROLOG,es una relacion entre objetos.
+Ejemplo:La capital de Francia es Paris. En Prolog se escribe capital(francia,paris).En general,la sintaxis es relacion(objeto,objeto,...).La relacion se conoce como el predicado y los objetos como los argumentos .
+
+Los nombres de todos los predicados y argumentos deben de comenzar con una letra minuscula.
+
+Primero,se escribe el predicado. Los argumentos se escriben separandolos mediante comas y encerrados entre parentesis.
+
+Al final del hecho debe ir un punto.
+
+En nuestro programa contenido de los vectores a y b hacen referencia a los valores de la tabla de verdad , estos valores son lo que les pertenece. 
+
+ -Reglas
+
+Una regla consta de dos partes,una cabeza y un cuerpo. La cabeza y el cuerpo estan unidos mediante el simbolo: -
+
+cabeza:- cuerpo.
+
+El cuerpo puede estar formado por varios hechos.
+
+cabeza:- hecho1, hecho2, ...,hecho n.
+
+La separacion: - se lee "si" ( la cabeza es verdad si el cuerpo es verdad )
+
+En el switch se encuentra la cabeza , que es la opcion seleccionada por el usr, a esta le corresponden los hechos de cada  "case" pero solo uno puede ser el resultado derivado de los conectores logicos
