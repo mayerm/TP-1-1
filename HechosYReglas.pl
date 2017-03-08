@@ -17,6 +17,7 @@ nieto(A,B) :-
 	padre(A,P),
 	padre(P,B).
 sin_parentezco(A,B) :-
+	A \== B,
 	persona(A),
 	persona(B),
 	not(padre(A,B)),
